@@ -1,0 +1,16 @@
+#DirectoryIndex
+DirectoryIndex index.php index.html index.htm
+
+#ErrorDocument
+ErrorDocument 401 /htaccess/errors/401.html
+ErrorDocument 403 /htaccess/errors/403.html
+ErrorDocument 404 /htaccess/errors/404.html
+ErrorDocument 500 /htaccess/errors/500.html
+
+IndexIgnore *.php *.png
+
+#Authentication
+AuthType Basic
+AuthName "Authentication"
+AuthUserFile C:\xampp\htdocs\htaccess\.htpasswd
+Require valid-user
